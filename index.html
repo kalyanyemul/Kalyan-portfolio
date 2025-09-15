@@ -18,6 +18,7 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#certificates">Certificates</a></li>
         <!-- <li><a href="#projects">Projects</a></li> -->
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -34,11 +35,14 @@
       <div class="menu-links">
         <li><a href="#about" onclick="toggleMenu()">About</a></li>
         <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
         <!-- <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> -->
         <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </div>
     </div>
   </nav>
+
+
   <section id="profile">
     <div class="section__pic-container">
       <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
@@ -206,8 +210,50 @@
         </div>
       </div>
     </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#certificates'" />
+  </section>
+
+  <section id="certificates">
+    <p class="section__text__p1">View My</p>
+    <h1 class="title">Certificates</h1>
+
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <!-- Certificate Card -->
+        <div class="details-container certificate-card">
+          <img src="./assets/AI-900.png" alt="Microsoft Azure AI 900 Certificate" class="certificate-img"
+            onclick="openPopup(this.src) " />
+          <div class="certificate-content">
+            <h3>Microsoft Azure AI Fundamentals (AI-900)</h3>
+            <p class="issuer">Issued by Microsoft • 2024</p>
+            <p class="certificate-desc">
+              Gained foundational knowledge of Artificial Intelligence, Machine Learning,
+              and Azure AI services...
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Add more certificates -->
+        <div class="details-container certificate-card">
+          <img src="./assets/java-cert.png" alt="Java Certification" class="certificate-img" />
+          <div class="certificate-content">
+            <h3>Java SE 11 Developer Certification</h3>
+            <p class="issuer">Issued by Oracle • 2023</p>
+            <p class="certificate-desc">
+              Validated expertise in Java programming, OOP principles, data handling,
+              multithreading, and performance optimization for enterprise applications.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
   </section>
+
   <!--
   <section id="projects">
     <p class="section__text__p1">Browse My Recent</p>
@@ -282,6 +328,7 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#certificates">Certificates</a></li>
           <!-- <li><a href="#projects">Projects</a></li> -->
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -290,6 +337,9 @@
     <p>Copyright &#169; 2025 Kalyankumar Yemul. All Rights Reserved.</p>
   </footer>
   <script src="script.js"></script>
+  <div id="popup" onclick="closePopup()">
+    <img id="popup-img" src="" alt="Certificate Preview" />
+  </div>
 </body>
 
 </html>
